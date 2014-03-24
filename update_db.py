@@ -2,7 +2,6 @@
 import imdb 
 from tpb import TPB
 from tpb import CATEGORIES, ORDERS
-import inspect
 import re
 import sqlite3
 movies = []
@@ -27,7 +26,7 @@ for i in t.top().category(CATEGORIES.VIDEO.MOVIES):
     listing = dict(title=movie_title,rating=movie_rating,magnet=i.magnet_link,tpbtitle=i.title)
     print("updating db with: " +str(listing))
     movies.append(listing) 
-    counter = 1+counter
+    counter += 1
     print counter
 
 print('connecting')
