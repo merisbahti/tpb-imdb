@@ -2,9 +2,8 @@
 import imdb 
 from tpb import TPB
 from tpb import CATEGORIES, ORDERS
-import inspect
-import re
 import sqlite3
+import re
 movies = []
 ia = imdb.IMDb() 
 t = TPB('http://thepiratebay.org') 
