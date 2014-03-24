@@ -1,3 +1,7 @@
 webfrontend/.git
 webfrontend/.git/
 webfrontend/.git/*
+webfrontend/.openshift
+webfrontend/.openshift/
+webfrontend/.openshift/*
+
