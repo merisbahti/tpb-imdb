@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data taken from TPB and IMDB.">
+  <meta name="author" content="Meris Bahtijaragic">
+  <title>IMDBTPB</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" />
+
+</head>
+<body>
+  <div id="wrap">
+    <div class="container">
+    <div class="panel panel-default" style="margin-top:20px">
+      <div class="panel-heading"><a href="http://imdb.com">IMDb</a> + <a href="http://thepiratebay.org">TPB</a> = Sant</div>
+      <ul class="list-group">
+      {% for item in rows %}
+      <a href="{{ item[2] }}" title="{{ item[3] }}"class="list-group-item">
+        <span class="badge" style="background-color:green">{{ item[1] }}</span>
+        {{ item[0] }}
+      </a>
+      {% endfor %}
+      </ul>
+      </div>
+      </div>
+    </div>
+  <br>
+  <br>
+  <br>
+  
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted credit">Created by Meris Bahtijaragic for Max, powered by <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://flask.pocoo.org/">Flask</a> and <a href="http://openshift.com">Openshift</a>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

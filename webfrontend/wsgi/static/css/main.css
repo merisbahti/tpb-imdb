@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Roboto, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px; 
+  padding:0px; 
+  margin:0px;
+}
+
+a:link {
+  text-decoration:none;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding-top: 0px;
+}
+
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+}
+
+.container .credit {
+  padding-top:20px;
+}
+
+@media (max-width: 320px) {
+    #footer {
+        height:100px;
+    }
+}
